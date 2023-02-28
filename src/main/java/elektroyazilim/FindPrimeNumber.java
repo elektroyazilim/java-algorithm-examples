@@ -2,7 +2,9 @@ package elektroyazilim;
 
 import java.util.Scanner;
 
-class Utils {
+class IsItPrime {
+
+    // this method finds any number is prime or not
     public boolean isItPrime(int num) {
         int count = 0;
         if (num == 2) {
@@ -14,12 +16,11 @@ class Utils {
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
                     count++;
-                    //break; -> alternative
+                    break;
                 }
             }
         }
-        // bu sorguyu asagidaki gibi degil de if ile yapsaydin return sorunu yasardin
-        // ne demek istiyorsun
+
         boolean isPrime = count != 0 ? false : true;
         return isPrime;
     }
@@ -37,6 +38,5 @@ public class FindPrimeNumber {
         System.out.println("Is " + number + " prime? : " + isPrime);
     }
 
-    // find prime number to Border
 
 }
