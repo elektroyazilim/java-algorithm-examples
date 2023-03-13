@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class GetFirstXPrimeNums{
+class GetFirstXPrimeNums {
 
     // this method finds any number is prime or not
     public boolean isItPrime(int num) {
@@ -27,12 +27,10 @@ class GetFirstXPrimeNums{
     }
 
 
-
     // This method gets the list of "First X Prime Numbers"
     public List<Integer> getFirstXPrimeNumbers(int primeCount) {
 
-        if(primeCount<=0 )
-        {
+        if (primeCount <= 0) {
             System.out.println("Invalid Number");
             return null;
         }
@@ -64,7 +62,7 @@ public class GetFirstXPrimeNumbers {
         GetFirstXPrimeNums obj = new GetFirstXPrimeNums();
         List<Integer> firstXPrimeNumbers = obj.getFirstXPrimeNumbers(countOfPNums);
 
-        if(firstXPrimeNumbers!=null)
+        if (firstXPrimeNumbers != null)
             System.out.println(firstXPrimeNumbers);
 
 
